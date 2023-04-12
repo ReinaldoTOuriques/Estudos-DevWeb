@@ -16,7 +16,32 @@
     <hr>
   </header>
   <main>
-    <h1>Hire Us Now</h1>
+    <h3>Hire Us Now</h3>
+    <p>Leave a message to request one of our services and we will get back to you as soon as possible.</p>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <label for="email">E-mail:</label>
+      <input type="text" id="email" name="email">
+      <br>
+      <br>
+      <label for="spaceship">Spaceship:</label>
+      <select id="spaceship" name="spaceship">
+        <option value="sao-paulo">Falcon 9</option>
+        <option value="rio-de-janeiro">Falcon Heavy</option>
+      </select>
+      <label for="typeOfService">Type Of Service:</label>
+      <input type="search" id="search" name="search" autocomplete="on" list="options">
+      <datalist id="options">
+        <option value="Lorem ipsum">
+        <option value="Dolor sit amet consectetur">
+        <option value="Amet consectetur adipisicing elit">
+        <option value="Iste est esse aliquid beatae unde non fugit enim">
+      </datalist>
+      <br>
+      <br>
+      <input type="submit" value="Send Message">
+    </form>
   </main>
 </body>
 </html>
