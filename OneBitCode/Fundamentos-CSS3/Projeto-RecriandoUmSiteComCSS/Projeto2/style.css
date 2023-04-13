@@ -1,0 +1,10 @@
+body {
+  text-align: justify;
+  padding-left: 250px;
+  padding-top: 20px;
+  padding-right: 250px;
+}
+
+.post-container {
+  background-color: #fffafa;
+}
