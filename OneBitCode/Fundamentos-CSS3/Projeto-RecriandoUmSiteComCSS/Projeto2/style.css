@@ -1,8 +1,6 @@
 body {
-  text-align: justify;
-  padding-left: 200px;
-  padding-top: 20px;
-  padding-right: 200px;
+  margin: 0;
+  padding: 0; 
 }
 
 h1 {
@@ -11,18 +9,24 @@ h1 {
 
 .post-container {
   background-color: #fffafa;
-  padding: 20px 40px 20px 40px;
+  width: 70%;
+  height: 100%;
+  margin: 0 auto 0 auto;
 }
 
-.post-content {
-  font-family: 'Open Sans', sans-serif;
-}
-
-.date {
+.post-container .date {
   color: #008080;
   font-family: 'Roboto', sans-serif;
 }
 
-.post {
-  margin-bottom: 40px;
+.post-container .post {
+  margin-bottom: 50px;
+  padding-top: 20px;
+  padding-left: 50px;
+}
+
+.post-container div.post-content {
+  width: 90%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
 }
