@@ -1,0 +1,63 @@
+/* Layout padrão da página. */
+.img-content {
+  width: 765px;
+  height: 400px;
+}
+
+.text-content {
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Responsividade */
+
+/* IMPORTANTE: O CSS3 funciona com a chamda "Regra de cascata". Ou seja, sempre que formos adapatar a responsividade de uma tela maior do que a anterior dentro do @media, esse novo valor maior deve ser declarado acima do valor menor, confome se vê no exercício abaixo. */
+
+@media (max-width: 2560px) and (min-width: 1440px) { /* Valores de monitores 4k */
+  .img-content {
+    width: 65%;
+    height: auto;
+  }
+
+  .title-content {
+    font-size: 2.5em;
+  }
+
+  .text-content {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .text-content {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 790px) {
+  .img-content {
+    width: 99%;
+    height: auto;
+  }
+
+  .title-content {
+    text-align: center;
+  }
+
+  .text-content {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .text-content {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 320px) {
+  .text-content {
+    font-size: 14px;
+  }
+}
