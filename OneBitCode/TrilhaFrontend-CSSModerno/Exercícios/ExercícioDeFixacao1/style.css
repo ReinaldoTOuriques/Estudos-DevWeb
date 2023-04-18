@@ -8,26 +8,37 @@
 header {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0.75em 2em;
   background-color: #000;
 }
 
-.logo {
-  width: 13em;
-  height: 6em;
-}
-
 .icon {
-  width: 14em;
-  height: 3em;
+  width: 4em;
 }
 
-.button {
-  padding: 0.50em 0.75em;
-  color: #fff;
+.logo {
+  width: 14em;
+}
+
+.buttonsContainer {
+  display: flex;
+  gap: 1em;
+}
+
+.headerButton {
+  padding: 0.75em 0.50em;
+  background-color: transparent;
+  font-size: 1em;
+  color: white;
   text-align: center;
   text-decoration: none;
-  font-size: 1.5em;
-  border-radius: 0.25em;
+  border-radius: 0.75em;
   border: solid #fff;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.headerButton:hover {
+  border-color: #ff0000;
 }
