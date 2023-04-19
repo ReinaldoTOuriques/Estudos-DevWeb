@@ -1,0 +1,24 @@
+* { /* Setup padrão para inciar os projetos. */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* LEMBRETE: Dar uma olhada no material relacionado ao box-sizing: border-box no w3Schools. */
+}
+
+.container {
+  background-color: #808080; /* Sempre dar preferência para as hashs ao invés do nome das cores. Isso deixa a página mais performática. */
+  min-height: 100vh; /* vh é uma medida responsiva e que quer dizer view height. Ou seja, 100vh é o mesmo que 100% da altura de visualizacao do usuário. */
+  display: flex; /* Ajusta o modo como os itens serão exibidos na tela para o usuário. */
+  align-items: center; /* centraliza o item horizontalmente. */
+  justify-content: center; /* centraliza o item verticalmente. */
+}
+
+.item { /* Todas as medidas aqui foram convertidas de px para em (uma medida responsiva). */
+  width: 12.5em;
+  height: 12.5em;
+  background-color: #fff;
+  border: 0.125em solid #000;
+  font-size: 1.25em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
