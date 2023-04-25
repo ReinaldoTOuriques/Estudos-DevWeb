@@ -24,11 +24,11 @@
 }
 
 .item1 {
+  align-self: end; /* Essa propriedade serve para fazer o alinhamento único de um dos itens. Agora, o item 2 foi para o final da página. Esse alinhamento é igual ao “align-items”. Não temos esse alinhamento de 1 item para horizontal, apenas para o vertical. */
   order: 2; /* A propridedade order é utilizada para ordenar a forma como os itens serão dispostos na tela. No caso desse exemplo, o item3 aparecerá primeiro, seguido do item1 e, por fim, o item2. */
 }
 
 .item2 {
-  flex: 1 0 auto; /* O flex puro é uma abreviação para utilizacão de todas as 3 propriedades flex vistas anteriormente. Sendo que o primeiro número é o flex-grow, o segundo é o flex-shirnk e o terceiro o flex-basis. */
   order: 3;
 }
 
