@@ -22,3 +22,17 @@
   align-items: center;
   justify-content: center;
 }
+
+.item1 {
+
+}
+
+.item2 {
+  flex-basis: 12.5em;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.item3 {
+
+}
