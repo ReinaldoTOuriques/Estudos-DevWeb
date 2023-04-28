@@ -3,3 +3,61 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.container {
+  background-color: #808080;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #fff;
+  width: 100%;
+  border: 0.1em solid;
+  padding: 0.5em;
+}
+
+.mainContent {
+  flex: 1 0 auto;
+  padding: 0.5em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "item1 item2 item3"
+    "item4 item4 item4"
+    "item5 item5 item6";
+  gap: 0.3em;
+}
+
+.row {
+  padding: 0.5em;
+  background-color: #fff;
+  border: 0.1em solid #000;
+}
+
+.item1 {
+  grid-area: item1;
+}
+.item2 {
+  grid-area: item2;
+}
+.item3 {
+  grid-area: item3;
+}
+.item4 {
+  grid-area: item4;
+}
+.item5 {
+  grid-area: item5;
+}
+.item6 {
+  grid-area: item6;
+}
+
+footer {
+  background-color: #fff;
+  width: 100%;
+  border: 0.1em solid;
+  padding: 0.5em;
+}
