@@ -13,6 +13,7 @@
 .logoNavBar {
   width: 11.25em;
 }
+
 .header {
   width: 100%;
   min-height: 2.5em;
@@ -23,4 +24,23 @@
   justify-content: space-between;
   padding: 2em;
   gap: 0.5em 1em;
+}
+
+.headerBtnGroup {
+  display: flex;
+  gap: 1em;
+}
+
+.navBtn {
+  font-size: 1em;
+  padding: 0.5em;
+  background-color: transparent;
+  border: 0.125em solid transparent;
+  color: white;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.navBtn:hover {
+  border-bottom: 0.125em solid black;
 }
