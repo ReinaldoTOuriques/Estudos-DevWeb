@@ -9,3 +9,18 @@
   display: flex;
   flex-direction: column;
 }
+
+.logoNavBar {
+  width: 11.25em;
+}
+.header {
+  width: 100%;
+  min-height: 2.5em;
+	background-color: #292929;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2em;
+  gap: 0.5em 1em;
+}
