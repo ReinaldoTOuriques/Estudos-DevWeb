@@ -81,6 +81,19 @@
 	height: 23.75em;
   border: 0.1em solid transparent;
   border-radius: 0.5em;
+  padding: 0.5em;
   transition: 0.5s;
   cursor: pointer;
+}
+
+.categoryCard:hover {
+  border-color: black;
+}
+
+.mainContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5em;
+  grid-area: mainContent;
 }
