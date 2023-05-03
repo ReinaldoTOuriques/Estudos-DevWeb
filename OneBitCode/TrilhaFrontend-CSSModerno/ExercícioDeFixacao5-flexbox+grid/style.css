@@ -75,3 +75,12 @@
   width: 100%;
   border-radius: 0.5em;
 }
+
+.categoryCard {
+  width: 17.5em;
+	height: 23.75em;
+  border: 0.1em solid transparent;
+  border-radius: 0.5em;
+  transition: 0.5s;
+  cursor: pointer;
+}
