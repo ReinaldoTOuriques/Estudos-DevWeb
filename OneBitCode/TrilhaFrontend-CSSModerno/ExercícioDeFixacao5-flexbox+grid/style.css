@@ -169,3 +169,29 @@
   color: #fff;
   text-decoration: none;
 }
+
+@media (max-width: 630px) {
+  .gridContainer {
+    grid-template-areas:
+      "mainContent"
+      "sidebarContent";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+  }
+  .sidebarContent {
+    min-width: auto;
+  }
+  .footerAnchor {
+    font-size: 1.25em;
+  }
+}
+@media (max-width: 463px) {
+  .header {
+    justify-content: center;
+  }
+  .footer {
+    justify-content: center;
+  }
+}
