@@ -110,16 +110,41 @@
 
 .sidebarContent {
   background-color: #383838;
+  border-radius: 0.5em;
   color: #fff;
-  padding: 0.5em;
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 18.75em;
+  min-width: 18em;
   grid-area: sidebarContent;
+  gap: 1.25em;
 }
 
 .sidebarTitle {
   font-size: 1.2em;
   padding: 1.5em;
+}
+
+.sidebarCard {
+  width: 75%;
+  padding: 0.5em;
+  border: 0.1em solid transparent;
+  border-radius: 0.5em;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.sidebarCardImg {
+  width: 100%;
+  border-radius: 0.5em;
+}
+
+.sidebarCardTitle {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 0.5em;
+}
+
+.sidebarCard:hover {
+  border-color: rgb(220, 220, 220);
 }
