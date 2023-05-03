@@ -97,3 +97,11 @@
   gap: 0.5em;
   grid-area: mainContent;
 }
+
+.mainCategoryCardTitle {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0.5em;
+}
+.mainCategoryCardDescription {
+  padding: 0.5em;
+}
