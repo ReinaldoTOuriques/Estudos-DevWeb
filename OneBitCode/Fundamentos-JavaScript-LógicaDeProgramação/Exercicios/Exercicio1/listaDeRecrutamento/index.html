@@ -16,26 +16,36 @@
       <h3>Cadastro</h3>
       <form id="formTag">
         <label for="firstName">Primeiro nome:</label>
-        <input type="text" id="firstNameInput" name="firstName">
+        <input type="text" id="firstNameInput" name="firstName" placeholder="João" required>
       
         <label for="last-name">Sobrenome:</label>
-        <input type="text" id="lastNameInput" name="lastName">
+        <input type="text" id="lastNameInput" name="lastName" placeholder="da Silva" required>
 
         <label for="email">E-mail:</label>
-        <input type="email" id="emailInput" name="email">
+        <input type="email" id="emailInput" name="email" placeholder="exemplo@gmail.com" required>
       
         <label for="fieldOfStudy">Campo de estudo:</label>
-        <input type="text" id="fieldOfStudyInput" name="fieldOfStudy">
-      
+        <select id="fieldOfStudy" name="fieldOfStudy">
+          <option value="Análise e Desenvolvimento de Sistemas">Análise e Desenvolvimento de Sistemas</option>
+          <option value="Sistemas de Informação">Sistemas de Informação</option>
+          <option value="Ciência da Computação">Ciência da Computação</option>
+          <option value="Engenharia da Computação">Engenharia da Computação</option>
+          <option value="outro">Outro</option>
+        </select>
+        <div id="outroOption" style="display: none;">
+          <label for="outro">Digite o seu campo de estudo</label>
+          <input type="text" id="outro" name="outro">
+        </div>
+
         <label for="birthYear">Ano de nascimento:</label>
-        <input type="text" id="birthYearInput" name="birthYear">
+        <input type="date" id="birthYearInput" name="birthYear" required>
       
-        <input type="submit" value="Salvar">
+        <input type="submit" value="Enviar">
       </form>
     </section>
   </main>
   <footer>
-    <p>OneBitCode - Todos os direitos reservados</p>
+    <p>OneBitCode - Todos os direitos reservados.</p>
   </footer>
   <script src="/script.js"></script>
 </body>

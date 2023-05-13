@@ -2,4 +2,95 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+  background-color: #f5f5f5;
+  height: 10em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 0.5em;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-color: #f5f5f5;
+}
+
+#formSection {
+  background-color: #fff;
+  border-radius: 0.7em;
+  padding: 1.25em;
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+  font-size: 1.25em;
+  margin-bottom: 0.7em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+}
+
+label {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+  border: 0.05em solid #ccc;
+  border-radius: 0.3em;
+  padding: 0.7em;
+  font-size: 1em;
+}
+
+input[type="submit"] {
+  background-color: #3f51b5;
+  color: #fff;
+  border: none;
+  border-radius: 0.3em;
+  padding: 0.7em 1.25em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background-color: #fff;
+  color: #3f51b5;
+  border: 0.05em solid #3f51b5;
+}
+
+#outroOption {
+  display: none;
+}
+
+select[name="fieldOfStudy"] option[value="outro"]:checked ~ #outroOption {
+  display: block;
+}
+
+footer {
+  background-color: #3f51b5;
+  color: #fff;
+  padding: 0.5em;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
 }

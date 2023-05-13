@@ -1,0 +1,114 @@
+/* Setup padrão das páginas. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Define as medidas base */
+html {
+  font-size: 1em;
+}
+
+/* Aplica o estilo ao body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+  color: #333;
+  background-color: #f0f0f0;
+}
+
+/* Aplica o estilo ao header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5em;
+  background-color: #0077b6;
+}
+
+header h1 {
+  font-size: 2em;
+  color: #ffff;
+  text-align: center;
+}
+
+/* Aplica o estilo ao main */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 5em);
+}
+
+#n1, #n2 {
+  font-size: 1em;
+  padding: 0.5em;
+  border: 0.03em solid #333;
+  border-radius: 0.5em;
+}
+
+.calculadora {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  border: 0.01em solid #333;
+  border-radius: 0.3em;
+  box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.3);
+  background-color: #ffff;
+  width: 20em;
+}
+
+.calculadora p {
+  padding: 1em;
+  margin: 0.5em 0;
+  font-size: 1em;
+}
+
+.calculadora select {
+  font-size: 1em;
+  padding: 0.5em;
+  border: 0.03em solid #333;
+  border-radius: 0.5em;
+}
+
+.calculadora input[type="text"],
+.calculadora button {
+  font-size: 1em;
+  margin: 0.5em;
+  padding: 0.5em;
+  border: none;
+  border-radius: 0.3em;
+  box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.3);
+  color: #333;
+  width: 100%;
+  text-align: center;
+  transition: 300ms;
+}
+
+.calculadora input[type="text"] {
+  margin-bottom: 1em;
+}
+
+.calculadora button:hover {
+  cursor: pointer;
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+/* Aplica o estilo ao footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5em;
+  background-color:  #0077b6;
+}
+
+footer p {
+  font-size: 1em;
+  color: #ffff;
+}

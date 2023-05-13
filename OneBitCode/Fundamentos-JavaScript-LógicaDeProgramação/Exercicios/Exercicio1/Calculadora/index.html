@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculadora OneBitCode</title>
+</head>
+<body>
+  <header>
+    <h1>Calculadora OneBitCode</h1>
+  </header>
+
+  <main>
+    <div class="calculadora">
+      <p>Primeiro número: <input type="number" id="n1" placeholder="Exemplo: 100" required></p>
+      <p>Segundo número: <input type="number" id="n2" placeholder="Exemplo: 200" required></p>
+      <p>Operação:
+        <select id="operacao">
+          <option value="soma">Soma</option>
+          <option value="subtracao">Subtração</option>
+          <option value="multiplicacao">Multiplicação</option>
+          <option value="divisao">Divisão</option>
+        </select>
+      </p>
+      <p>Resultado: <input type="text" id="resultado" placeholder="300" readonly></p>
+      <button id="calcular">Calcular</button>
+      <button id="limpar">Limpar</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>OneBitCode - Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
