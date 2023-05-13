@@ -37,7 +37,7 @@ function calcular() {
   resultadoInput.value = resultado;
 }
 
-// Função para limpar todos os campos e voltar para a operação de soma.
+// Função para limpar todos os campos e voltar para a operação de soma (padrão).
 function limpar() {
   n1Input.value = '';
   n2Input.value = '';
