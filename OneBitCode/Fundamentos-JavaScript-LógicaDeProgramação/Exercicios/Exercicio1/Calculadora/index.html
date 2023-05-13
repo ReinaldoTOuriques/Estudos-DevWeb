@@ -14,8 +14,8 @@
 
   <main>
     <div class="calculadora">
-      <p>Número 1: <input type="number" id="n1"></p>
-      <p>Número 2: <input type="number" id="n2"></p>
+      <p>Primeiro número: <input type="number" id="n1" placeholder="Exemplo: 100" required></p>
+      <p>Segundo número: <input type="number" id="n2" placeholder="Exemplo: 200" required></p>
       <p>Operação:
         <select id="operacao">
           <option value="soma">Soma</option>
@@ -24,8 +24,9 @@
           <option value="divisao">Divisão</option>
         </select>
       </p>
-      <p>Resultado: <input type="text" id="resultado" readonly></p>
-      <p><button id="calcular">Calcular</button></p>
+      <p>Resultado: <input type="text" id="resultado" placeholder="300" readonly></p>
+      <button id="calcular">Calcular</button>
+      <button id="limpar">Limpar</button>
     </div>
   </main>
 
