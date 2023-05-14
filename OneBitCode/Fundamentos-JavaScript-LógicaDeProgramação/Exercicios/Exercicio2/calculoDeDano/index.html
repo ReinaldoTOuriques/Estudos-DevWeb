@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Character Battle</title>
+</head>
+<body>
+  <h1>Character Battle</h1>
+  <form>
+    <fieldset>
+      <legend>Attacker</legend>
+      <label for="attackerName">Name:</label>
+      <input type="text" id="attackerName" required>
+      <br>
+      <label for="attackerAttack">Attack Power:</label>
+      <input type="number" id="attackerAttack" required>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Defender</legend>
+      <label for="defenderName">Name:</label>
+      <input type="text" id="defenderName" required>
+      <br>
+      <label for="defenderHealth">Hit Points:</label>
+      <input type="number" id="defenderHealth" required>
+      <br>
+      <label for="defenderDefense">Defense Power:</label>
+      <input type="number" id="defenderDefense" required>
+      <br>
+      <label for="defenderShield">Shield:</label>
+      <input type="checkbox" id="defenderShield">
+    </fieldset>
+    <br>
+    <button type="submit">Attack</button>
+  </form>
+  <div id="result"></div>
+  <script src="script.js"></script>
+</body>
+</html>
