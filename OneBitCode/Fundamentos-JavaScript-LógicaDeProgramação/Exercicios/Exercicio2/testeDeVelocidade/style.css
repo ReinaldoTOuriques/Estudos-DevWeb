@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo para o cabeçalho */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1.25em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilo para o título */
+h1 {
+  margin: 0;
+}
+
+h3 {
+  font-size: 1em;
+  margin-top: 0;
+}
+
+main {
+  height: 100vh;
+  padding: 10em;
+  overflow: hidden;
+}
+
+/* Estilo para o contêiner principal */
+.pilotsInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column {
+  width: 45%;
+}
+
+.firstPilotsColumn {
+  margin-right: 5%;
+}
+
+.secondPilotsColumn {
+  margin-left: 5%;
+}
+
+/* Estilo para os campos de entrada */
+input {
+  width: 100%;
+  padding: 0.75em 1.25em;
+  margin: 0.5em 0;
+  box-sizing: border-box;
+  border: 0.125em solid #ccc;
+  border-radius: 0.25em;
+}
+
+/* Estilo para o botão */
+/* O text-align: center é uma propriedade do CSS que alinha o texto no centro de um elemento. No entanto, essa propriedade não funciona diretamente em elementos que não sejam de texto, como botões.
+
+Para alinhar o botão ao centro, você pode envolvê-lo em um contêiner e aplicar a propriedade text-align: center no contêiner. Porém, em alguns navegadores, essa propriedade não funciona quando aplicada diretamente em um contêiner. Nesse caso, podemos usar a propriedade text-align: -webkit-center, que funciona em navegadores baseados no motor WebKit, como o Google Chrome.
+
+Dessa forma, ao adicionar text-align: -webkit-center no contêiner que envolve o botão, estamos alinhando o botão ao centro horizontalmente, independente do tamanho da tela ou das colunas. */
+.buttonContainer {
+  margin: 2em auto 0;
+  text-align: -webkit-center;
+}
+
+button {
+  font-size: 1em;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.125em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #333;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0px 5px 0px #6f6f6f;
+}
+
+button:active {
+  transform: translateY(0.2em);
+  box-shadow: none;
+}
+
+/* Estilo para o rodapé */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 0.625em;
+}

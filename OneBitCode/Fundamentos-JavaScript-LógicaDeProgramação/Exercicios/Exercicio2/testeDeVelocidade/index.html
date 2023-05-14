@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Speed Test</title>
+</head>
+<body>
+  <header>
+    <h1>OneBitCode - Speed Test</h1>
+  </header>
+
+  <main>
+    <div class="pilotsInfo">
+      <div class="column firstPilotsColumn">
+        <div class="firstPilotsName">
+          <h3>First pilot's name: <input type="text" id="firstPilotsNameInput" placeholder="Enter the first pilot's name." required></h3>
+        </div>
+        <div class="firstPilotsCarModelName">
+          <h3>First pilot's car model name: <input type="text" id="firstPilotsCarModelNameInput" placeholder="Enter the first pilot's car model name." required></h3>
+        </div>
+        <div class="firstPilotsCarTopSpeed">
+          <h3>First pilot's car top speed: <input type="number" id="firstPilotsCarTopSpeedInput" placeholder="Enter the first pilot's car top speed." required></h3>
+        </div>
+      </div>
+
+      <div class="column secondPilotsColumn">
+        <div class="secondPilotsName">
+          <h3>Second pilot's name: <input type="text" id="secondPilotsNameInput" placeholder="Enter the second pilot's name." required></h3>
+        </div>
+        <div class="secondPilotsCarModelName">
+          <h3>Second pilot's car model name: <input type="text" id="secondPilotsCarModelNameInput" placeholder="Enter the second pilot's car model name." required></h3>
+        </div>
+        <div class="secondPilotsCarTopSpeed">
+          <h3>Second pilot's car top speed: <input type="number" id="secondPilotsCarTopSpeedInput" placeholder="Enter the second pilot's car top speed." required></h3>
+        </div>
+      </div>
+    </div>
+    <div class="buttonContainer">
+      <button type="button" onclick="speedTest()">Compare the pilots performance</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>OneBitCode - Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
