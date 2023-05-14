@@ -62,6 +62,11 @@ input {
 }
 
 /* Estilo para o botão */
+/* O text-align: center é uma propriedade do CSS que alinha o texto no centro de um elemento. No entanto, essa propriedade não funciona diretamente em elementos que não sejam de texto, como botões.
+
+Para alinhar o botão ao centro, você pode envolvê-lo em um contêiner e aplicar a propriedade text-align: center no contêiner. Porém, em alguns navegadores, essa propriedade não funciona quando aplicada diretamente em um contêiner. Nesse caso, podemos usar a propriedade text-align: -webkit-center, que funciona em navegadores baseados no motor WebKit, como o Google Chrome.
+
+Dessa forma, ao adicionar text-align: -webkit-center no contêiner que envolve o botão, estamos alinhando o botão ao centro horizontalmente, independente do tamanho da tela ou das colunas. */
 .buttonContainer {
   margin: 2em auto 0;
   text-align: -webkit-center;
