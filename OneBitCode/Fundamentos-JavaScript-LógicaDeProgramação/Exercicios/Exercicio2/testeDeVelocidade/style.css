@@ -73,17 +73,29 @@ Dessa forma, ao adicionar text-align: -webkit-center no contêiner que envolve o
 }
 
 button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 0.875em 1.25em;
-  margin: 0.5em 0;
+  font-size: 1em;
+  background-color: #fff;
+  color: #333;
   border: none;
-  border-radius: 0.25em;
+  padding: 0.5em 1em;
+  border-radius: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.125em;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #333;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0px 5px 0px #6f6f6f;
+}
+
+button:active {
+  transform: translateY(0.2em);
+  box-shadow: none;
 }
 
 /* Estilo para o rodapé */
