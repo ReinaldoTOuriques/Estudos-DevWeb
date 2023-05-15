@@ -8,10 +8,10 @@
   <title>Character Battle</title>
 </head>
 <body>
-  <h1>Character Battle</h1>
+  <h1>OneBitCode - Character Battle</h1>
   <form>
     <fieldset>
-      <legend>Attacker</legend>
+      <legend>ATTACKER</legend>
       <label for="attackerName">Name:</label>
       <input type="text" id="attackerName" required>
       <br>
@@ -20,7 +20,7 @@
     </fieldset>
     <br>
     <fieldset>
-      <legend>Defender</legend>
+      <legend>DEFENDER</legend>
       <label for="defenderName">Name:</label>
       <input type="text" id="defenderName" required>
       <br>
@@ -30,13 +30,18 @@
       <label for="defenderDefense">Defense Power:</label>
       <input type="number" id="defenderDefense" required>
       <br>
-      <label for="defenderShield">Shield:</label>
-      <input type="checkbox" id="defenderShield">
+      <label class="custom-checkbox" for="defenderShield">Shield:
+        <input type="checkbox" id="defenderShield">
+        <span class="checkmark"></span>
+      </label>
     </fieldset>
     <br>
     <button type="submit">Attack</button>
   </form>
   <div id="result"></div>
+  <footer>
+    <p>OneBitCode - Todos os direitos reservados.</p>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
