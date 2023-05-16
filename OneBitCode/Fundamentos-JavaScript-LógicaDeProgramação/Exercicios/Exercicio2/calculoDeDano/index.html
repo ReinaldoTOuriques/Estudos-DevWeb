@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Character Battle</title>
+</head>
+<body>
+  <h1>OneBitCode - Character Battle</h1>
+  <form>
+    <fieldset>
+      <legend>ATTACKER</legend>
+      <label for="attackerName">Name:</label>
+      <input type="text" id="attackerName" required>
+      <br>
+      <label for="attackerAttack">Attack Power:</label>
+      <input type="number" id="attackerAttack" required>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>DEFENDER</legend>
+      <label for="defenderName">Name:</label>
+      <input type="text" id="defenderName" required>
+      <br>
+      <label for="defenderHealth">Hit Points:</label>
+      <input type="number" id="defenderHealth" required>
+      <br>
+      <label for="defenderDefense">Defense Power:</label>
+      <input type="number" id="defenderDefense" required>
+      <br>
+      <label class="custom-checkbox" for="defenderShield">Shield:
+        <input type="checkbox" id="defenderShield">
+        <span class="checkmark"></span>
+      </label>
+    </fieldset>
+    <br>
+    <div id="result"></div>
+    <button type="submit">Attack</button>
+  </form>
+  <footer>
+    <p>OneBitCode - Todos os direitos reservados.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

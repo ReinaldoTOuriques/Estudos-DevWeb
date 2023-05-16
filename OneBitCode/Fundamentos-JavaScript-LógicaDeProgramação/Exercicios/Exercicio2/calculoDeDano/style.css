@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+body {
+  background-color: #d3c4a9;
+  font-family: Georgia, serif;
+  font-size: 1em;
+  line-height: 2em;
+  padding: 1.25em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1.25em;
+  color: #823b18;
+}
+
+form {
+  background-color: #e6d3ad;
+  border: 0.125em solid #823b18;
+  border-radius: 0.625em;
+  padding: 1.25em;
+  box-shadow: 0.3125em 0.3125em 0 #823b18;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 0.625em;
+}
+
+legend {
+  font-size: 1.5em;
+  color: #823b18;
+}
+
+label {
+  display: inline-block;
+  width: 7.5em;
+  text-align: right;
+  margin-right: 0.625em;
+  font-size: 1.25em;
+  color: #823b18;
+}
+
+input {
+  display: inline-block;
+  font-size: 1.25em;
+  color: #823b18;
+  border: 0.125em solid #823b18;
+  border-radius: 0.3125em;
+  padding: 0.3125em;
+  margin: 0.3125em;
+}
+
+.custom-checkbox {
+  display: inline-block;
+  position: relative;
+  padding-left: 2em;
+  margin-right: 1em;
+  font-size: 1em;
+  color: #823b18;
+  cursor: pointer;
+}
+
+.custom-checkbox input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0.5em;
+  left: 1em;
+  height: 1em;
+  width: 1em;
+  border: 2px solid #823b18;
+  border-radius: 3px;
+}
+
+.checkmark::before {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  background-color: #823b18;
+  border-radius: 50%;
+  height: 70%;
+  width: 70%;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark::before {
+  display: block;
+}
+
+button {
+  display: block;
+  margin: 1.25em auto 0;
+  padding: 0.625em 1.25em;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #823b18;
+  border: 0.125em solid #823b18;
+  border-radius: 0.3125em;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+  box-shadow: none;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transform: scale(0);
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+  z-index: -1;
+}
+
+button:active::before {
+  transform: scale(1);
+}
+
+#result {
+  margin-top: 1.25em;
+  font-size: 1.5em;
+  color: #823b18;
+}
+
+footer {
+  padding: 1em;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.875em;
+  color: #823b18;
+}
