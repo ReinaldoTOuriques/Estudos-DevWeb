@@ -149,7 +149,6 @@ button:active::before {
 }
 
 #result {
-  margin-top: 1.25em;
   font-size: 1.5em;
   color: #823b18;
 }
