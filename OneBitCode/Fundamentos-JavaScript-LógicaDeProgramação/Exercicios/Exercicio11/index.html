@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Escalador de Times</title>
+</head>
+<body>
+  <header>
+    <h1>Escalador de Times</h1>
+  </header>
+  <main>
+    <h2>Escalar Jogador</h2>
+    <label for="posicao">Posição:</label>
+    <input type="text" id="posicao" /><br />
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" /><br />
+    <label for="numero">Número da camisa:</label>
+    <input type="text" id="numero" /><br />
+    <button onclick="escalarJogador()">Escalar</button>
+
+    <h2>Remover Jogador</h2>
+    <label for="numeroRemover">Número da camisa:</label>
+    <input type="text" id="numeroRemover" /><br />
+    <button onclick="removerJogador()">Remover</button>
+
+    <h2>Lista de Jogadores Escalados</h2>
+    <ul id="listaJogadores"></ul>
+  </main>
+  <footer>
+    <p>OneBitCode - Todos os direitos reservados.</p>
+  </footer>
+  <script src="/script.js"></script>
+</body>
+</html>
