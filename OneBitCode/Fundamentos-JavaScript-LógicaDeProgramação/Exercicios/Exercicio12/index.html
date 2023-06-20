@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>OBC - Cadastro de Desenvolvedores</title>
+</head>
+<body>
+  <h1>Cadastro de Desenvolvedores</h1>
+
+  <form id="developerForm">
+    <label for="nameInput">Nome Completo:</label>
+    <input type="text" id="nameInput" required>
+    <br><br>
+    <label>Tecnologias:</label>
+    <div id="technologyList"></div>
+    <button type="button" id="addTechnologyBtn">Adicionar Tecnologia</button>
+    <br><br>
+    <button type="submit">Cadastrar</button>
+  </form>
+
+  <div id="developerSection">
+    <h2>Desenvolvedores Cadastrados:</h2>
+    <button type="button" id="clearHistoryBtn">Limpar Histórico</button>
+    <table id="developerTable">
+      <tr>
+        <th>Nome</th>
+        <th>Tecnologias</th>
+      </tr>
+    </table>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
