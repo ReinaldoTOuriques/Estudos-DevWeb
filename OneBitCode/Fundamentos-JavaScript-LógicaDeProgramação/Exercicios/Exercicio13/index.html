@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>OBC - Tic-Tac-Toe</title>
+</head>
+<body>
+  <div class="container">
+    <div>
+      <h2>Jogo da Velha</h2>
+      <div>
+        <label for="player1">Jogador 1:</label>
+        <input type="text" id="player1" placeholder="Nome do jogador 1">
+      </div>
+      <div>
+        <label for="player2">Jogador 2:</label>
+        <input type="text" id="player2" placeholder="Nome do jogador 2">
+      </div>
+      <div id="turn" class="message"></div>
+      <div class="board">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+      <button id="restartBtn">Reiniciar</button>
+      <div id="result" class="message"></div>
+    </div>
+  </div>
+  <script src="/script.js"></script>
+</body>
+</html>
